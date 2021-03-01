@@ -31,3 +31,7 @@ carry, /, %
 3. Create p3 pointer
 4. Reversal! p2.next to p1
 5. Update p1 to p2 and p2 to p3
+
+## 237. Delete a Node in a Linked List
+
+Just overwrite the val with the next
