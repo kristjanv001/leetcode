@@ -20,7 +20,16 @@ carry, /, %
 4. Create the digit: add val1 and val2 and carry, new carry / 10 and final digit by % 10
 5. Insert the node
 6. Update l1,l2 pointers to their next if not None (use ternary)
-7. Return 
+7. Return
+
+## 3. Longest Substring Without Repeating Characters
+
+hashmap container, sliding window
+
+1. Start and end pointers at 0, current and max length variables
+2. Loop over str until the end pointer
+3. If character is not in hashmap, then store it, increment end pointer and compare max length (use max function)
+4. If not, then remove the re-curring character and increment start pointer 
 
 ## 206. Reverse Linked List
 
