@@ -44,3 +44,8 @@ hashmap container, sliding window
 ## 237. Delete a Node in a Linked List
 
 Just overwrite the val with the next
+
+## 628. Maximum Product of Three Numbers
+
+1. Sort the list
+2. Compare the maximum of the last three and the first two + the last one
