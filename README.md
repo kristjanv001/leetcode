@@ -1,6 +1,6 @@
 # Leetcode
 
-All of my Leetcode solutions with some notes
+Some of my Leetcode solutions with some notes
 
 ## 1. Two Sum
 
