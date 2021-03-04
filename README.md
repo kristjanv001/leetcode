@@ -30,7 +30,7 @@ hashmap container, sliding window
 1. Start and end pointers at 0 and max length variable
 2. Loop over str until the end pointer
 3. If a character is not in hashmap, then store it, increment end pointer, and compare max length (use max function)
-4. If not, then remove the recurring character and increment the start pointer 
+4. If it is, then remove the recurring character and increment the start pointer 
 
 ## 5. Longest Palindromic Substring
 O(n^2)T | O(1)S
