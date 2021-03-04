@@ -3,6 +3,7 @@
 All of my Leetcode solutions with some notes
 
 ## 1. Two Sum
+O(N)T | O(N)S
 
 hashmap
 
