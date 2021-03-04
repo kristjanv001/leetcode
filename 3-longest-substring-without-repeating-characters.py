@@ -1,3 +1,7 @@
+# O(N)T | O(1)S 
+# There are only so many characters in an alphabet, so it's essentially constant space complexity.
+# The size of the hash map does not increase in relation to the size of the input. 
+# Maybe it's not technically correct to say O(1)S, but I'd argue that essentially it's O(1) space
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         start = 0
