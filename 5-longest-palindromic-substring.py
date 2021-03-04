@@ -1,3 +1,4 @@
+# O(n^2)T | O(1)S
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         
