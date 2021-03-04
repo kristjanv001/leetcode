@@ -33,7 +33,6 @@ hashmap container, sliding window
 4. If it is, then remove the recurring character and increment the start pointer 
 
 ## 5. Longest Palindromic Substring
-O(n^2)T | O(1)S
 
 odd / even palindromes, expand from the middle
 
