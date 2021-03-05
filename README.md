@@ -41,6 +41,14 @@ odd / even palindromes, expand from the middle
 4. If we have a new max length (a new longer palindrome), update the start and end indices. We divide the current maximum length with 2 using the // operator. For 'start', we have to subtract 1 from the current max length. Otherwise, in some cases, we end up out of bounds.
 5. Return a substring using our start and end indices. +1 to the end.
 
+## 11. Container with Most Water
+
+2 pointers, re-calc area at each step
+
+1. Set left and right pointers and current max variable
+2. While the pointers have not 'touched' check which of the pillars is higher to use that to calculate the area (if/else). Use Math.max to update the max area. Update pointers.
+3. return max
+
 ## 206. Reverse Linked List
 
 3 pointers, shift all of them
