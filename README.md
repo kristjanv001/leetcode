@@ -49,6 +49,19 @@ odd / even palindromes, expand from the middle
 2. While the pointers have not 'touched' check which of the pillars is higher to use that to calculate the area (if/else). Use Math.max to update the max area. Update pointers.
 3. return max
 
+## 15. 3Sum
+
+Two Sum II mechanics (l & r pointers), HashSet to avoid dupes
+
+1. Sort the array
+2. Use HashSet, so we don't have to worry about dupes
+3. Set up a for-loop. Loop until nums.length-2 because we're looking fors sets of 3 and we don't want to go out of bounds.
+4. Set up left and right pointers. Left pointer is i+1, because we don't want to include the same item to the resulting list.
+5. Set up a while loop (similar to Two Sum II)
+6. Declare a sum variable. It'll be the result of current value plus the ones on the left/right pointers.
+7. If-else statements similar to Two Sum II. We're checking if sum is smaller or greater than zero and moving the pointers accordingly.
+8. Return new Arraylist passing in the HashSet
+
 ## 167 Two Sum II
 
 L & R pointers, while loop, if-else
