@@ -49,6 +49,12 @@ odd / even palindromes, expand from the middle
 2. While the pointers have not 'touched' check which of the pillars is higher to use that to calculate the area (if/else). Use Math.max to update the max area. Update pointers.
 3. return max
 
+## 167 Two Sum II
+
+L & R pointers, while loop, if-else
+
+Since the array is sorted, we can use 2 pointers and move either the left or the right one depending whether the sum of those elements is greater or less than the target. If the sum is less, then we know that we need to move the left pointer, if it's greater then we need to move the right one to left.
+
 ## 206. Reverse Linked List
 
 3 pointers, shift all of them
