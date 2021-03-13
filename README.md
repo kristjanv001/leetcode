@@ -62,6 +62,17 @@ Two Sum II mechanics (l & r pointers), HashSet to avoid dupes
 7. If-else statements similar to Two Sum II. We're checking if sum is smaller or greater than zero and moving the pointers accordingly.
 8. Return new Arraylist passing in the HashSet
 
+## 19. Remove Nth Node From End of List
+
+Fast / slow pointer, n nodes apart
+
+1. Create a dummy node, so that we have a reference to the head (edge cases).
+2. Set up slow and fast pointers.
+3. Set the fast pointer n nodes apart from the slow pointer.
+4. Traverse the lsit with both pointers until the fast one gets to the end. Since we set them n nodes apart, the slow one will be exactly in the right spot.
+5. Remove the node.
+6. Return dummy.next (head ref).
+
 ## 167 Two Sum II
 
 L & R pointers, while loop, if-else
