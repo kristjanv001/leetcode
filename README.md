@@ -73,6 +73,16 @@ Fast / slow pointer, n nodes apart
 5. Remove the node.
 6. Return dummy.next (head ref).
 
+## 20. 20. Valid Parentheses
+
+Stack, HashMap
+
+1. Set up HashMap, Stack and brackets mappings.
+2. Loop over the string.
+3. If we're dealing with an opening bracket, add it to the stack.
+4. Otherwise, if we're dealing with a closing bracket, use the bracket in the top of the stack as a key to get its value (closing bracket) from the hashmap and compare it to the current character. They better match. If not, return false. Return false also if the stack is empty.
+5. Return stack.isEmpty(). If there's still something in the stack, it'll return false. The stack should be empty - every bracket should have found it's partner.
+
 ## 167 Two Sum II
 
 L & R pointers, while loop, if-else
