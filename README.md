@@ -73,7 +73,7 @@ Fast / slow pointer, n nodes apart
 5. Remove the node.
 6. Return dummy.next (head ref).
 
-## 20. 20. Valid Parentheses
+## 20. Valid Parentheses
 
 Stack, HashMap
 
@@ -82,6 +82,13 @@ Stack, HashMap
 3. If we're dealing with an opening bracket, add it to the stack.
 4. Otherwise, if we're dealing with a closing bracket, use the bracket in the top of the stack as a key to get its value (closing bracket) from the hashmap and compare it to the current character. They better match. If not, return false. Return false also if the stack is empty.
 5. Return stack.isEmpty(). If there's still something in the stack, it'll return false. The stack should be empty - every bracket should have found it's partner.
+
+## 88. Merge Sorted Array
+
+1. Set up a results array where we temporarily store elements.
+2. Traverse both arrays and check which element is smaller - add that to result-array.
+3. Loop over both arrays again separately to add remaining elements.
+4. Overwrite the nums1 array with elements from the temporary - result array.
 
 ## 167 Two Sum II
 
