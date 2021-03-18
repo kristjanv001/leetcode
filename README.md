@@ -114,6 +114,13 @@ Just overwrite the val with the next
 
 Comments in code
 
+## 387. First Unique Character in a String
+
+1. Set up a HashMap
+2. Loop over the string once to store all characters and their count
+3. Loop over the string again and check if there's a character with a count of 1 in the hashmap
+4. By default return -1
+
 ## 628. Maximum Product of Three Numbers
 
 1. Sort the list
