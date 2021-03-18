@@ -96,6 +96,14 @@ L & R pointers, while loop, if-else
 
 Since the array is sorted, we can use 2 pointers and move either the left or the right one depending whether the sum of those elements is greater or less than the target. If the sum is less, then we know that we need to move the left pointer, if it's greater then we need to move the right one to left.
 
+## 189. Rotate Array
+
+1. Write a helper function to do the reversals. A while-loop to reverse the start with end, then move pointers closer to each other. Don't forget to have a tmp to store the start value, so that we can later use it for the new end value.
+3. Reverse the whole array.
+4. Reverse the first half.
+5. Reverse the second half.
+6. Nb! k = k % nums.length.
+
 ## 206. Reverse Linked List
 
 3 pointers, shift all of them
