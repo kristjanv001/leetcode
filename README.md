@@ -83,6 +83,12 @@ Stack, HashMap
 4. Otherwise, if we're dealing with a closing bracket, use the bracket in the top of the stack as a key to get its value (closing bracket) from the hashmap and compare it to the current character. They better match. If not, return false. Return false also if the stack is empty.
 5. Return stack.isEmpty(). If there's still something in the stack, it'll return false. The stack should be empty - every bracket should have found it's partner.
 
+## 33. Search in Rotated Sorted Array
+
+1. First we check the whether to check the left or right side. Compare against the middle.
+2. If target 'should' be on the left-side which means it's smaller than the middle, then we check whether left is also smaller than the middle and the target is smaller than the value at left - if so, then left = mid + 1, otherwise right = mid - 1
+3. If the target 'should' be on the right-side, then we check if the value on the right is greater than the value at the middle and that the target is greater than the value on the right. If so, then right = mid - 1, otherwise left = mid + 1.
+
 ## 53. Maximum Subarray
 
 Joseph Kadane's algorithm
