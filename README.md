@@ -85,9 +85,9 @@ Stack, HashMap
 
 ## 33. Search in Rotated Sorted Array
 
-1. First we check the whether to check the left or right side. Compare against the middle.
-2. If target 'should' be on the left-side which means it's smaller than the middle, then we check whether left is also smaller than the middle and the target is smaller than the value at left - if so, then left = mid + 1, otherwise right = mid - 1
-3. If the target 'should' be on the right-side, then we check if the value on the right is greater than the value at the middle and that the target is greater than the value on the right. If so, then right = mid - 1, otherwise left = mid + 1.
+Check my comments on the code. 
+
+Basically we're just figuring out which side of the array is sorted. We never know where our mid pointer lands, but we do know that in either case one side will be correctly sorted. Then, depending on that, we try to pinpoint on which side our target value should be located. 
 
 ## 53. Maximum Subarray
 
