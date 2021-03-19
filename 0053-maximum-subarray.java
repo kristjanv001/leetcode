@@ -1,4 +1,5 @@
 class Solution {
+    // O(N)T | O(1)S
     public int maxSubArray(int[] nums) {
         int maxVal = nums[0];
         int currMax = nums[0];
