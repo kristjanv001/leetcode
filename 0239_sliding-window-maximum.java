@@ -25,7 +25,7 @@ class Solution {
                 deque.addLast(i);
             }
 
-            // i = k; // at this point, 'i' will be equal to k (window size);
+            // i == k; // at this point, 'i' will be equal to k (window size);
             // First thing we do, is to save the largest element - which is identified by the saved
             // index - from the front of the decue to our results array. 
             // Remember, we cleared off all the indices of smaller values from the back, 
