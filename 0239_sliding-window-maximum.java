@@ -1,4 +1,5 @@
 class Solution {
+    // O(N)T | O(w)S, where w is the size of the window
     public int[] maxSlidingWindow(int[] nums, int k) {
         
         // Set up the results array where we store the final max element of each window
