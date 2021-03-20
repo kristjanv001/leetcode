@@ -144,6 +144,12 @@ Just overwrite the val with the next
 
 Comments in code
 
+## 283. Move Zeroes
+
+1. Set read/write indices
+2. First while-loop: if the element at read index is not zero, tell the write index to write to its index whatever read index has. Move both. If the element at read index is zero, then only move the read index.
+3. Second while-loop: After the read index reaches the end, let the write to overwrite all the rest with zeroes.
+
 ## 387. First Unique Character in a String
 
 1. Set up a HashMap
