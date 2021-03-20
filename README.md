@@ -136,6 +136,17 @@ Since the array is sorted, we can use 2 pointers and move either the left or the
 4. Reversal! p2.next to p1
 5. Update p1 to p2 and p2 to p3
 
+----
+
+There's 3 parts to the reversal:
+1. We set up 3 pointers: prev, head and next. 'next' will be set inside the while-loop.
+
+prev head  next                       
+      1  ->  1  ->  3  ->  4 -> null
+
+2. We do the reversal by pointing the head to prev (null)
+3. Then we update the pointers by shifting them forward
+
 ## 237. Delete a Node in a Linked List
 
 Just overwrite the val with the next
