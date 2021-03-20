@@ -87,7 +87,16 @@ Stack, HashMap
 
 Check my comments on the code. 
 
-Basically we're just figuring out which side of the array is sorted. We never know where our mid pointer lands, but we do know that in either case one side will be correctly sorted. Then, depending on that, we try to pinpoint on which side our target value should be located. 
+Basically we're just figuring out which side of the array is sorted. We never know where our mid pointer lands, but we do know that in either case one side will be correctly sorted. Then, depending on that, we try to pinpoint on which side our target value should be located.
+
+## 34. Find First and Last Position of Element in Sorted Array
+
+2 binary search functions - to find low/high respectively
+
+1. Set up result array and set index 0 and 1 to the outcome of the functions
+2. Write the functions - they're almost identical. 
+3. Just like a regular binary search, but instead of returning after finding the index, we just update it but keep updating the bounadaries - if at the next iteration we find another instance, then we update our index, but if not, then the binary search will end anyway without finding another index (and therefore not updating the result index variable).
+
 
 ## 53. Maximum Subarray
 
