@@ -112,6 +112,13 @@ Joseph Kadane's algorithm
 3. Loop over both arrays again separately to add remaining elements.
 4. Overwrite the nums1 array with elements from the temporary - result array.
 
+## 121. Best Time to Buy and Sell Stock
+
+Joseph Kadane's algorithm
+
+1. We keep adding to currentProfit as long as it's not negative. If it is, we just reset it to zero.
+2. We update maxProfit if it's greater than the currentprofit.
+
 ## 141. Linked List Cycle
 
 Robert Floyd's cycle finding algorithm
