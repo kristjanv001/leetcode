@@ -150,7 +150,7 @@ There's 3 parts to the reversal:
 1. We set up 3 pointers: prev, head and next. 'next' will be set inside the while-loop.
 
 prev head  next                       
-      1  ->  1  ->  3  ->  4 -> null
+null  1  ->  1  ->  3  ->  4 -> null
 
 2. We do the reversal by pointing the head to prev (null)
 3. Then we update the pointers by shifting them forward
