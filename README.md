@@ -112,6 +112,14 @@ Joseph Kadane's algorithm
 3. Loop over both arrays again separately to add remaining elements.
 4. Overwrite the nums1 array with elements from the temporary - result array.
 
+## 141. Linked List Cycle
+
+Robert Floyd's cycle finding algorithm
+
+1. 2 pointers: fast and slow
+2. Move slow one step and fast 2 steps
+3. If slow == fast, there's a cycle
+
 ## 167 Two Sum II
 
 L & R pointers, while loop, if-else
