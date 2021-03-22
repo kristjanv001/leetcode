@@ -187,3 +187,8 @@ Comments in code
 
 1. Sort the list
 2. Compare the maximum of the last three and the first two + the last one
+
+## 724. Find Pivot Index
+
+1. Get the whole sum
+2. Another loop, subtract elements j from the whole sum, compare left with right, keep increasing the left sum with j elements - works out like magic
