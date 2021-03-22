@@ -192,3 +192,8 @@ Comments in code
 
 1. Get the whole sum
 2. Another loop, subtract elements j from the whole sum, compare left with right, keep increasing the left sum with j elements - works out like magic
+
+## 747. Largest Number At Least Twice of Others
+
+1. Get the index of the max number.
+2. Loop over the array again and check if the max number is smaller than current number * 2 - if so, there's no point looping further, return -1.
