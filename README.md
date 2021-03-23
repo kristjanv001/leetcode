@@ -105,6 +105,12 @@ Joseph Kadane's algorithm
 1. Set currMax and globalMax variables and initialize both to the first integer in the array
 2. Loop over the array. At each position we find the max sum of the subarray. If the currMax is smaller than zero, reset it to the current integer. Keep adding to the currMax and check if currMax is greater than globalMax.
 
+## 66. Plus One
+
+1. Loop backwards and add one.
+2. Return if current digit is less than 9, otherwise make it zero.
+3. Make a +1 length array for the edge case and change only first element to zero as the array is initialized with zeroes anyway.
+
 ## 88. Merge Sorted Array
 
 1. Set up a results array where we temporarily store elements.
