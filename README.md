@@ -97,7 +97,6 @@ Basically we're just figuring out which side of the array is sorted. We never kn
 2. Write the functions - they're almost identical. 
 3. Just like a regular binary search, but instead of returning after finding the index, we just update it but keep updating the bounadaries - if at the next iteration we find another instance, then we update our index, but if not, then the binary search will end anyway without finding another index (and therefore not updating the result index variable).
 
-
 ## 53. Maximum Subarray
 
 Joseph Kadane's algorithm
@@ -188,6 +187,23 @@ Comments in code
 2. Loop over the string once to store all characters and their count
 3. Loop over the string again and check if there's a character with a count of 1 in the hashmap
 4. By default return -1
+
+## 498. Diagonal Traverse
+
+Input:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+
+Output:  [1,2,4,7,5,3,6,8,9]
+
+The idea is to loop over the matrix and add the sum of indicies and the elements associated with these indicies as key-value pairs respectively to a hashmap. Why? Because the diagonals are represented by the sum of indicies. E.g., at indicies sum (i+j) of 2 we have 3,5 and 7. In order to get the 'snake'-like structure we reverse the elements if the key (sum of indicies) cleanly divides by 2.
+
+1. Set up a HashMap and a result array
+2. Loop over the matrix and add i+j as keys and a list of elements at these indicies as values. E.g., {0=[1], 1=[2,4], 2=[3,5,7], 3=[6,8], 4=[9]}.
+3. Second part: reverse the values if the key divides by 2, then add all the values to the result array.
 
 ## 628. Maximum Product of Three Numbers
 
