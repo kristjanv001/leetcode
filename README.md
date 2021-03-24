@@ -104,6 +104,15 @@ Joseph Kadane's algorithm
 1. Set currMax and globalMax variables and initialize both to the first integer in the array
 2. Loop over the array. At each position we find the max sum of the subarray. If the currMax is smaller than zero, reset it to the current integer. Keep adding to the currMax and check if currMax is greater than globalMax.
 
+## 54. Spiral Matrix
+
+1. Declare boundaries: top, bottom, left, right.
+2. Declare size of the matrix.
+3. Declare a while-loop: as long as the result array is smaller than the size of the matrix - i.e. keep going until there are elements to collect.
+4. Traverse from top left to right, then from top to bottom, etc. and add elements from columns/rows to the result list. Adjust the top/bottom/left/right as necessary not to collect duplicate elements.
+
+Check code for comments.
+
 ## 66. Plus One
 
 1. Loop backwards and add one.
