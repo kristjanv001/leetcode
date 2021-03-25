@@ -126,6 +126,13 @@ Check code for comments.
 3. Loop over both arrays again separately to add remaining elements.
 4. Overwrite the nums1 array with elements from the temporary - result array.
 
+## 118. Pascal's Triangle
+
+1. Create the output list of lists
+2. Add the first list containing number 1 and add it to the triangle
+3. Main loop - how many rows we need? Defined current and previous rows
+4. Inner loop to add the centre of the current row + the padding of 1's on each side
+
 ## 121. Best Time to Buy and Sell Stock
 
 Joseph Kadane's algorithm
