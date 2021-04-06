@@ -1,4 +1,5 @@
 class Solution {
+    // O(N)T | O(1)S
     public void moveZeroes(int[] nums) {
         
         int read = 0; // fast
